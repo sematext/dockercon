@@ -1,0 +1,1 @@
+docker build -t sematext/docker-jdk10:latest .
