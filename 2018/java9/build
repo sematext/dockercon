@@ -1,1 +1,6 @@
-docker build -t sematext/docker-jdk9:latest .
+#!/bin/bash
+dir="."
+if [ ! -z "$1" ]; then
+  dir=$1
+fi
+docker build -t sematext/docker-jdk9:latest $dir
