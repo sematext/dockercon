@@ -2,5 +2,13 @@
 dir="."
 if [ ! -z "$1" ]; then
   dir=$1
+  cp constraints/*.java $dir
+  cp constraints/*.sh $dir
+else
+  cp ../constraints/*.java .
+  cp ../constraints/*.sh .
 fi
 docker build -t sematext/docker-jdk7:latest $dir
+
+rm $dir/*.java
+rm $dir/cpu.sh $dir/mem.sh $dir/memFlags.sh
