@@ -1,0 +1,15 @@
+version: "2"
+services:
+  java_30g:
+    image: openjdk:11
+    command: java -Xmx30g -Xlog:gc+heap+coops=info -version
+  java_31g:
+    image: openjdk:11
+    command: java -Xmx31g -Xlog:gc+heap+coops=info -version
+    links:
+      - java_30g
+  java_32g:
+    image: openjdk:11
+    command: java -Xmx32g -Xlog:gc+heap+coops=info -version
+    links:
+      - java_31g
