@@ -10,11 +10,6 @@ docker run -m128M --cpus 1 -i -t sematext/docker-jdk7
 /root/mem.sh
 
 ## Java 8
-docker run -i -t sematext/docker-jdk8
-
-/root/cpu.sh
-/root/mem.sh
-
 docker run -m128M --cpus 1 -i -t sematext/docker-jdk8
 
 /root/cpu.sh
@@ -22,11 +17,6 @@ docker run -m128M --cpus 1 -i -t sematext/docker-jdk8
 /root/memFlags.sh
 
 ## Java 9
-docker run -i -t sematext/docker-jdk9
-
-/root/cpu.sh
-/root/mem.sh
-
 docker run -m128M --cpus 1 -i -t sematext/docker-jdk9
 
 /root/cpu.sh
