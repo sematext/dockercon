@@ -1,13 +1,8 @@
 ## Java 7
-docker run -i -t sematext/docker-jdk7
+docker run -m128M --cpus 1 -i -t sematext/docker-jdk7
 
 cat /root/MemoryTest.java
 cat /root/CpuTest.java
-
-/root/cpu.sh
-/root/mem.sh
-
-docker run -m128M --cpus 1 -i -t sematext/docker-jdk7
 
 /root/cpu.sh
 /root/mem.sh
@@ -26,11 +21,6 @@ docker run -m128M --cpus 1 -i -t sematext/docker-jdk9
 /root/mem.sh
 
 ## Java 10
-docker run -i -t sematext/docker-jdk10 && docker
-
-/root/cpu.sh
-/root/mem.sh
-
 docker run -m128M --cpus 1 -i -t sematext/docker-jdk10
 
 /root/cpu.sh
