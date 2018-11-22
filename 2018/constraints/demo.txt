@@ -1,6 +1,9 @@
 ## Java 7
 docker run -i -t sematext/docker-jdk7
 
+cat /root/MemoryTest.java
+cat /root/CpuTest.java
+
 /root/cpu.sh
 /root/mem.sh
 
